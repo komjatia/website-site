@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 export default function Header() {
   return (
-    <header>
+    <header className='mb-5'>
       <Navbar bg='primary' variant='dark' collapseOnSelect expand='lg'>
         <Container>
           <LinkContainer to='/'>
@@ -13,7 +13,7 @@ export default function Header() {
           <Navbar.Collapse id='navbarScroll'>
             <Nav
               className='my-2 my-lg-0 justify-content-end align-items-center'
-              style={{ maxHeight: "100px", width: "100%" }}
+              style={{ width: "100%" }}
               navbarScroll>
               <LinkContainer to='/'>
                 <Nav.Link>Fooldal</Nav.Link>
@@ -29,7 +29,7 @@ export default function Header() {
               </LinkContainer>
               <LinkContainer to='/contact'>
                 <Nav.Link>
-                  <button type='button' className='btn btn-success'>
+                  <button type='button' className='btn btn-outline-success'>
                     Kapcsolat
                   </button>
                 </Nav.Link>
