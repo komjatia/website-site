@@ -12,5 +12,5 @@ export default function Heading({ text }) {
 const StyledHeading = styled.div`
   font-size: 3rem;
   color: #4b4b4b;
-  margin: 2rem 2rem;
+  margin: 2rem 0rem;
 `;
