@@ -9,7 +9,7 @@ export default function Line() {
       <hr />
       <div className='d-flex'>
         {data.map((x) => (
-          <Checked text={x} />
+          <Checked text={x} key={x} />
         ))}
       </div>
     </StyledLineContainer>
