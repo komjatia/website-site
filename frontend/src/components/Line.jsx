@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Checked from "./Checked";
+import Checked from "./CheckMark";
 
 export default function Line() {
   const data = ["Olcso", "Biztonsagos", "Gyors", "Kenyelmes"];

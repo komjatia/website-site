@@ -1,10 +1,10 @@
 import React from "react";
-import CheckBoxes from "../components/CheckBoxes";
+import CheckBoxContainer from "../components/CheckBoxContainer";
 
 export default function PricingPage() {
   return (
     <div>
-      <CheckBoxes />
+      <CheckBoxContainer />
     </div>
   );
 }
