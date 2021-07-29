@@ -9,8 +9,8 @@ export default function CheckBoxes({ text, title, type, price, click, state }) {
     text-align: center;
     transition: all 0.1s ease-in-out;
     border: ${active ? "3px" : "1px"} solid;
-    width: 100%;
-    height: 100%;
+    width: 20rem;
+    height: 15rem;
     &:hover {
       cursor: pointer;
       border: 3px solid;
@@ -36,7 +36,7 @@ export default function CheckBoxes({ text, title, type, price, click, state }) {
   }, [state, sessionStorage]);
   return (
     <StyledCard
-      className='border-success'
+      className='border-success mx-3 my-3'
       id={title}
       onClick={() => click(type, title, price, text)}>
       <Card.Body id={title}>

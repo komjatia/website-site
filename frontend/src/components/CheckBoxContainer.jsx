@@ -18,15 +18,9 @@ export default function CheckBoxContainer() {
       price: 55,
     },
     {
-      type: "Funkcio",
+      type: "Design",
       text: "sfsfdfsdfs",
       title: "EgyediF",
-      price: 55,
-    },
-    {
-      type: "Funkcio",
-      text: "sfsfdfsdfs",
-      title: "SablonF",
       price: 55,
     },
   ];
@@ -47,7 +41,6 @@ export default function CheckBoxContainer() {
         },
       });
     } else {
-      console.log("delete and add");
       sessionStorage.removeItem(`card${type}`);
       sessionStorage.setItem(
         `card${type}`,
@@ -66,7 +59,10 @@ export default function CheckBoxContainer() {
     }
   };
   return (
-    <StyledCheckboxContainer>
+    <StyledCheckboxContainer className='p-2 form-group my-4 border-secondary'>
+      <legend className='control-label customer-legend pl-1 w-auto'>
+        Design{" "}
+      </legend>
       {newData.map((x) => (
         <CheckBoxes
           state={card}
@@ -82,19 +78,13 @@ export default function CheckBoxContainer() {
   );
 }
 
-const StyledCheckboxContainer = styled.div`
+const StyledCheckboxContainer = styled.fieldset`
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  .checked {
-    width: 15rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center !important;
-    padding: 1rem;
-  }
-  .checked:hover {
-    border: 1px solid;
+  min-height: 25rem;
+  legend {
+    float: none;
   }
 `;
